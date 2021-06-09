@@ -27,7 +27,11 @@ for i in link:
         listi = i.contents[0]
         search_url_finds.append(str(base_url) + str(listi.get('href')))
         #print(str(no) + ". " + search_url_finds[no-1])
+        print(listi.get('href'))
         no += 1
+
+
+#'https://ajax.gogo-load.com/ajax/load-list-episode?ep_start=0&ep_end=25&id=1512&default_ep=0&alias=kuroko-no-baske' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0' -H 'Accept: text/html, */*; q=0.01' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Origin: https://www1.gogoanime.ai' -H 'DNT: 1' -H 'Connection: keep-alive' -H 'Referer: https://www1.gogoanime.ai/' -H 'Cache-Control: max-age=0' -H 'TE: Trailers'
 
 resp2 = requests.get(search_url_finds[0])
 print(search_url_finds[0])
